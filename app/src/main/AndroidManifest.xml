@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.constructor.sidisas.constructor">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FichaHogarActivity"
+            android:label="@string/title_activity_ficha_hogar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Ficha" />
+        <activity android:name=".LocalizacionActivity" />
+        <activity android:name=".FirmaActivity" />
+        <activity android:name=".PersonaActivity" />
+        <activity android:name=".PendientesTareasActivity" />
+        <activity android:name=".TableroActivity" />
+        <activity android:name=".ParametrosActivity" />
+        <activity android:name=".ConexionesConfiguracionActivity" />
+        <activity android:name=".EstructuraFormulariosActivity" />
+        <activity android:name=".TextActivity" />
+        <activity android:name=".PendientesActivity" />
+        <activity android:name=".AiepiActivity" />
+        <activity android:name=".CancerMamaActivity" />
+        <activity android:name=".KardexActivity" />
+        <activity android:name=".TestFindriskActivity" />
+        <activity android:name=".DemandaInducidaActivity" />
+        <activity android:name=".PromocionActivity"></activity>
+    </application>
+
+</manifest>

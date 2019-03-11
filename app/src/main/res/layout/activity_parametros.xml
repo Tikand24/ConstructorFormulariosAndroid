@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ParametrosActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Parametros"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlue"
+                android:textSize="30sp" />
+
+            <android.support.v7.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="3dp"
+                android:background="@color/blueGrey"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imageViewConexiones"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tint="@color/cardview_light_background"
+                    app:layout_gravity="start"
+                    app:srcCompat="@drawable/ic_server_network" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewConexionesTitulo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="top|center"
+                        android:text="CONEXIONES"
+                        android:textColor="@color/cardview_light_background"
+                        app:layout_gravity="top|start" />
+
+                    <TextView
+                        android:id="@+id/textViewConexionesDescripcion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="Aquí podra configurar las conexiones de la base de datos local y del servidor"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="10sp"
+                        app:layout_column="1"
+                        app:layout_gravity="bottom|start"
+                        app:layout_row="0" />
+                </LinearLayout>
+
+            </android.support.v7.widget.GridLayout>
+
+            <android.support.v7.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="3dp"
+                android:background="@color/blueGrey"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imageViewEstructuraFormularios"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tint="@color/cardview_light_background"
+                    app:layout_gravity="start"
+                    app:srcCompat="@drawable/ic_cellphone_arrow_down" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewEstructuraFormulariosTitulo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="top|center"
+                        android:text="FORMULARIOS"
+                        android:textColor="@color/cardview_light_background"
+                        app:layout_gravity="top|start" />
+
+                    <TextView
+                        android:id="@+id/textViewEstructuraFormulariosDescripcion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="Aqui podra descargar la estructura de los formularios asignados a la entidad"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="10sp"
+                        app:layout_column="1"
+                        app:layout_gravity="bottom|start"
+                        app:layout_row="0" />
+                </LinearLayout>
+
+            </android.support.v7.widget.GridLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

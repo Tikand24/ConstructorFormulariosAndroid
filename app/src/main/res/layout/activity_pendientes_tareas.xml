@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.constructor.sidisas.constructor.PendientesTareasActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="24dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TAREAS PENDIENTES" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"
+                android:orientation="vertical"
+                android:paddingBottom="24dp"
+                android:paddingTop="24dp">
+
+                <TextView
+                    android:id="@+id/tvAiepiPendientesTarea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="AIEPI"
+                    android:textColor="@android:color/background_light" />
+
+                <ListView
+                    android:id="@+id/listViewAiepi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="24dp"
+                android:paddingTop="24dp">
+
+                <TextView
+                    android:id="@+id/tvCancerMamaPendientesTarea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CANCER DE MAMA" />
+
+                <ListView
+                    android:id="@+id/listViewCancer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="24dp"
+                android:paddingTop="24dp">
+
+                <TextView
+                    android:id="@+id/tvKardexPendientesTarea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="KARDEX" />
+
+                <ListView
+                    android:id="@+id/listViewKardex"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="24dp"
+                android:paddingTop="24dp">
+
+                <TextView
+                    android:id="@+id/tvTestFindriskPendientesTarea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TEST DE FINDRISK" />
+
+                <ListView
+                    android:id="@+id/listViewTest"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="24dp"
+                android:paddingTop="24dp">
+
+                <TextView
+                    android:id="@+id/tvDemandaPendientesTarea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DEMANDA INDUCIDA" />
+
+                <ListView
+                    android:id="@+id/listViewDemanda"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="24dp"
+                android:paddingTop="24dp">
+
+                <TextView
+                    android:id="@+id/tvPromocionPendientesTarea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PROMOCION" />
+
+                <ListView
+                    android:id="@+id/listViewPromocion"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
